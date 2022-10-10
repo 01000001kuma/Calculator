@@ -1,7 +1,17 @@
 
+const getStyleName = name => {
+    const className = {
+        '=': 'equals',
+        'x': 'multiply',
+        '-': 'subtract',
+        '+': 'add',
+        '/': 'divide', 
+    }
+}
+
 const Button = ({value}) => {
   return (
-    <button>{value}</button>
+    <button className={'${getStyleName(value)} button'}>{value}</button>
   )
 }
 

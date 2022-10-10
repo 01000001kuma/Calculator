@@ -2,10 +2,12 @@ import Wrapper from './Components/Wrapper';
 import Screen from './Components/Screen';
 import ButtonBox from './Components/ButtonBox';
 import Button from './Components/Button';
+import CalcProvider from './Context/CalcContext';
+
 
 
 const btnValues = [
-  ["C", "+/-", "%", "/"],
+  ["C", "+-", "%", "/"],
   [7, 8, 9, "x"],
   [4, 5, 6, "-"],
   [1, 2, 3, "+"],
@@ -15,19 +17,21 @@ const btnValues = [
 
 function App() {
   return (
-    <div>
+    
+      <CalcProvider>
         <Wrapper>
             <Screen />
-            <ButtonBox> 
+              <ButtonBox> 
                 {btnValues.flat().map((btn, i) => (
-                  <button 
+                  <Button 
                   value={btn}
                   key={i}
                   />
                   ))}
-            </ButtonBox>
+              </ButtonBox>
         </Wrapper>
-    </div>
+      </CalcProvider>
+    
   );
 }
 
