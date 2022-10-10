@@ -2,6 +2,7 @@ import './App.css';
 import Wrapper from './Components/Wrapper';
 import Screen from './Components/Screen';
 import ButtonBox from './Components/ButtonBox';
+import Button from './Components/Button';
 
 
 const btnValues = [
@@ -19,7 +20,7 @@ function App() {
         <Wrapper>
             <Screen />
             <ButtonBox> 
-
+                {btnValues.flat().map((btn, i) => (}
             </ButtonBox>
         </Wrapper>
     </div>
