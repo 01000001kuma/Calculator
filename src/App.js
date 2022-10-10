@@ -1,4 +1,3 @@
-import './App.css';
 import Wrapper from './Components/Wrapper';
 import Screen from './Components/Screen';
 import ButtonBox from './Components/ButtonBox';
@@ -20,7 +19,12 @@ function App() {
         <Wrapper>
             <Screen />
             <ButtonBox> 
-                {btnValues.flat().map((btn, i) => (}
+                {btnValues.flat().map((btn, i) => (
+                  <button 
+                  value={btn}
+                  key={i}
+                  />
+                  ))}
             </ButtonBox>
         </Wrapper>
     </div>
