@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -13,6 +14,10 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
+  background-image: url("https://images.theconversation.com/files/61200/original/33jsrymy-1412811908.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .screen {
